@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  color: #333;
+  line-height: 1.6;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #efad08;
+}
+
+.nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav a:hover,
+.nav a.active {
+  color: #654900;
+}
+
+
+.hero-reservation {
+  height: 50vh;
+  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+              url("monument de la renaissance.avif") center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-reservation h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.hero-reservation p {
+  font-size: 18px;
+}
+
+
+.reservation-section {
+  display: flex;
+  justify-content: center;
+  padding: 80px 50px;
+  background: #f4dea7;
+}
+
+.reservation-form {
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  width: 450px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+}
+
+.reservation-form h2 {
+  color: #5a3700;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.reservation-form input,
+.reservation-form select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.reservation-form button {
+  width: 100%;
+  padding: 14px;
+  background: #5a3700;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.reservation-form button:hover {
+  background: #654900;
+}
+
+.footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+
+@media (max-width: 768px) {
+  .reservation-section {
+    padding: 50px 20px;
+  }
+
+  .hero-reservation h1 {
+    font-size: 30px;
+  }
+
+  .reservation-form {
+    width: 100%;
+  }
+}

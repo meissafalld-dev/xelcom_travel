@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Réservation | Xelcom Travel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="reservation.css">
+  <link rel="shortcut icon" href="logo.webp">
+</head>
+
+<body>
+
+
+  <header class="header">
+    <div class="logo">
+      <i class="fa-solid fa-plane-departure"></i>
+      Xelcom Travel
+    </div>
+
+    <nav class="nav">
+      <a href="xelcom.html">Accueil</a>
+      <a href="destination.html">Destinations</a>
+      <a href="circuit.html">Circuits</a>
+      <a href="reservation.html">Réservation</a>
+      <a href="corporate.html">À propos</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+
+  <section class="hero-reservation">
+    <h1>Réservez votre voyage</h1>
+    <p>Organisez votre séjour au Sénégal en quelques clics</p>
+  </section>
+
+
+  <section class="reservation-section">
+
+    <div class="reservation-form">
+      <h2>Formulaire de réservation</h2>
+
+      <form>
+        <input type="text" placeholder="Nom complet" required>
+        <input type="email" placeholder="Email" required>
+        <input type="tel" placeholder="Téléphone" required>
+
+        <select required>
+          <option value="">Choisissez votre destination</option>
+          <option value="goree">Île de Gorée</option>
+          <option value="saloum">Musée des civilisations noires</option>
+          <option value="casamance">Casamance</option>
+          <option value="Reserve de Fathala">Reserve de Fathala</option>
+          <option value="Saly Portudal">Saly Portudal</option>
+        </select>
+
+        <input type="date" required>
+        <input type="number" placeholder="Nombre de personnes" min="1" required>
+
+        <select required>
+          <option value="">Tarif</option>
+          <option value="resident">Résident</option>
+          <option value="international">International</option>
+        </select>
+
+        <button type="submit">Réserver maintenant</button>
+      </form>
+    </div>
+
+  </section>
+
+
+  <footer class="footer">
+    <p>© 2025 Xelcom Travel – Tous droits réservés</p>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  color: #333;
+  line-height: 1.6;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #efad08;
+}
+
+.nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav a:hover,
+.nav a.active {
+  color: #654900;
+}
+
+
+.hero-contact {
+  height: 50vh;
+  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+              url("monument de la renaissance.avif") center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-contact h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.hero-contact p {
+  font-size: 18px;
+}
+
+
+.contact-section {
+  padding: 80px 50px;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: #f4dea7;
+}
+
+
+.contact-info {
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  width: 350px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+}
+
+.contact-info h2 {
+  color: #5a3700;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+
+.contact-info i {
+  color: #5a3700;
+  margin-right: 10px;
+}
+
+.socials {
+  margin-top: 20px;
+}
+
+.socials a {
+  margin-right: 15px;
+  font-size: 18px;
+  color: #5a3700;
+  text-decoration: none;
+}
+
+
+.contact-form {
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  width: 400px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+}
+
+.contact-form h2 {
+  color: #5a3700;
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  background: #5a3700;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #654900;
+}
+
+
+.footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 50px 20px;
+  }
+
+  .hero-contact h1 {
+    font-size: 30px;
+  }
+}
